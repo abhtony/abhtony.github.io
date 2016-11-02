@@ -4,6 +4,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Driverless Cars</title>
+    <!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -13,9 +16,6 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	
-	<!-- jQuery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	
 	<!-- Font Awesome -->
 	<script src="https://use.fontawesome.com/7f8049db1e.js"></script>
 	
@@ -24,18 +24,20 @@
 </head>
 
 <header>
-	<div class="jumbotron text-center">
-	  	<h1>Driverless Cars</h1>
-	  	<p>Lorem Ipsum</p> 
+	<div class="jumbotron text-center mainBanner">
+        <div class="jumbotronInner">
+            <h1>Autonomous Cars Project</h1>
+	  	    <p>Queen Elizabeth II Highway Expansion</p> 
+        </div>
 	</div>
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 		    <ul class="nav navbar-nav">
-				<li><a href="#">About</a></li>
-				<li><a href="#">Safety</a></li>
-				<li><a href="#">Economics</a></li> 
-				<li><a href="#">Implementation</a></li> 
-				<li><a href="#">Contacts</a></li> 
+				<li class="navAbout"><a href="#contentAbout">About</a></li>
+				<li class="navSafety"><a href="#contentSafety">Safety</a></li>
+				<li class="navEconomics"><a href="#contentEconomics">Economics</a></li> 
+				<li class="navImplementation"><a href="#contentImplementation">Implementation</a></li> 
+				<li class="navContacts"><a href="#contentContacts">Contacts</a></li> 
 			</ul>
 		</div>
 	</nav>
@@ -43,49 +45,86 @@
 
 
 <body>
-	<div class="jumbotron text-center">
+	<div class="jumbotron text-center odd" id="contentAbout">
   		<h2>About the Project</h2>
-  		<p>Ist Histh Erigh Tfon Ttou Se</p> 
-		<div class="container" id="contentBox1">
-			<div class="row">
-		  	<div class="col-sm-4">
-		      <i class="fa fa-heartbeat fa-5x"></i><h3>Column 1</h3>
-		      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-		      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-		    </div>
-		    <div class="col-sm-4">
-		      <i class="fa fa-car fa-5x"></i><h3>Column 2</h3>
-		      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-		      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-		    </div>
-		    <div class="col-sm-4">
-		      <i class="fa fa-road fa-5x"></i><h3>Column 3</h3> 
-		      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-		      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-		    </div>
-		  </div>
+        <hr class="style1"/>
+  		<p class="contentSubheading">The Autonomous Cars Project aims to expand the Queen Elizabeth II highway so that it will have extra lanes on each side. However, these lanes will be dedicated lanes for autonomous cars - cars that have self-driving capabilities.</p> 
+		<div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <i class="fa fa-road fa-5x"></i><h3>Reduce Congestions</h3> 
+                    <p>There's already a demand for expansion due to high congestion.</p>
+                    <p>Autonomous cars have super-precise driving that can further lower congestion!</p>
+                </div>
+                <div class="col-sm-4">
+                    <i class="fa fa-heartbeat fa-5x"></i><h3>Reduce Accidents</h3>
+                    <p>Did you know most 85% of vehical accidents happen due to driver error?</p>
+                    <p>Dedicated lanes for self-driving cars is the first step to safety!</p>
+                </div>
+                <div class="col-sm-4">
+                    <i class="fa fa-car fa-5x"></i><h3>Futureproof</h3>
+                    <p>The world of artificial intelligence is coming - along with self-driving cars!</p>
+                    <p>Let Alberta be ready for self-driving cars when they hit to road!</p>
+                </div>
+            </div>
 		</div>
 	</div>
 	
-	<div class="jumbotron text-center">
+	<div class="jumbotron text-center even" id="contentSafety">
   		<h2>Safety</h2>
-  		<p>Ist Histh Erigh Tfon Ttou Se</p> 
+        <hr class="style1"/>
+        <p class="contentSubheading">How safe are self-driving cars? The technology is still maturing (it should be ready by 2020!), but even with our current technology, self-driving cars are incredibly safe!</p>
+  		<p>In fact, for every 5,168,984 km of driving:</p> 
+        <div class="row">
+            <div class="col-sm-6">
+                <h5>Google's Self-Driving Cars</h5>
+                <img class="safetyBargraph" src="bargraph01.png"> <p><span style="color: #5cdd45;">7498</span> injuries</p>
+            </div>
+            <div class="col-sm-6">
+                <h5>Canadian Average</h5>
+                <img class="safetyBargraph" src="bargraph02.png"> <p>18,745 injuries</p>
+            </div>
+        </div>
+        <p>With injuries alone, we can decrease them by 60%!</p>
 	</div>
 	
-	<div class="jumbotron text-center">
+	<div class="jumbotron text-center odd" id="contentEconomics">
   		<h2>Economics</h2>
+        <hr class="style1"/>
   		<p>Ist Histh Erigh Tfon Ttou Se</p> 
 	</div>
 	
-	<div class="jumbotron text-center">
+	<div class="jumbotron text-center even" id="contentImplementation">
   		<h2>Implementation</h2>
+        <hr class="style1"/>
   		<p>Ist Histh Erigh Tfon Ttou Se</p> 
 	</div>
 	
-	<div class="jumbotron text-center">
+	<div class="jumbotron text-center odd" id="contentContacts">
   		<h2>Contacts</h2>
+        <hr class="style1"/>
   		<p>Ist Histh Erigh Tfon Ttou Se</p> 
 	</div>
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 </body>
 
 <footer>

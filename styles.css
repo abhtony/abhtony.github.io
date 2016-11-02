@@ -2,6 +2,10 @@
     /*padding: 15px 0;*/
 }
 
+/*************************/
+/*FIXING THE DAMN NAV BAR*/
+/*************************/
+
 .navbar-default {
     border: none;
     background: none;
@@ -10,11 +14,146 @@
 }
 
 .navbar-nav {
-    width: 600px;
+    width: 60%;
     margin: 0 auto;
     float: none;
+    text-align: center;
+}
+
+.navbar {
+    margin-bottom: 0;
 }
 
 .navbar-nav ul {
     float: right;
 }
+
+@media screen and (min-width: 768px) {
+        .navAbout {
+        width: 14%;
+    }
+
+    .navSafety {
+        width: 19%;
+    }
+
+    .navEconomics {
+        width: 23%;
+    }
+
+    .navImplementation {
+        width: 30%;
+    }
+
+    .navContacts {
+        width: 14%;
+    }
+}
+
+
+
+
+
+/*Main Banner*/
+.mainBanner {
+    background: url("banner02.png");
+    background-repeat: repeat-x;
+    background-size: 80%;
+    background-position: center;
+    margin-bottom: 0;
+}
+
+.jumbotronInner {
+    padding: 10px 0;
+    color: #FFF;
+    margin: 0 auto;
+    width: 65%;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.jumbotronInner h1 {
+    font-size: 3.0em;
+}
+
+
+
+/*body*/
+body .jumbotron {
+/*    border-top: 15px solid #B1E87E;*/
+/*    background-color: #FFF;*/
+/*
+    background-color: #B1E87E;
+    color: rgba(0, 0, 0, 0.75);
+*/
+/*    margin-bottom: 0;*/
+}
+
+.jumbotron i {
+/*    color: rgba(0, 0, 0, 0.50);*/
+}
+
+#contentContacts {
+    margin-bottom: 0;
+}
+
+.contentSubheading {
+    width: 65%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    text-align: justify;
+    -moz-text-align-last: left; /* Code for Firefox */
+    text-align-last: left;
+}
+
+
+
+
+/*CONTENT*/
+.safetyBargraph {
+    width: 250px;
+}
+
+
+
+
+
+
+
+/*hr styles*/
+hr.style1 {
+	border-top: 1px solid rgba(0, 0, 0, 0.75);
+	width: 250px;
+	text-align: center;
+}
+hr.style1:after {
+	content: '§';
+	display: inline-block;
+	position: relative;
+	top: -13px;
+	padding: 0 10px;
+/*	background: #fff;*/
+/*    background: #B1E87E;*/
+        background: #EEE;
+/*	color: #8c8b8b;*/
+    color: rgba(0, 0, 0, 0.75);
+	font-size: 18px;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
