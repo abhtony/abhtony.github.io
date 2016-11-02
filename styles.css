@@ -80,7 +80,7 @@
 /*body*/
 body .jumbotron {
 /*    border-top: 15px solid #B1E87E;*/
-/*    background-color: #FFF;*/
+    background-color: #f2f2f2;
 /*
     background-color: #B1E87E;
     color: rgba(0, 0, 0, 0.75);
@@ -133,7 +133,7 @@ hr.style1:after {
 	padding: 0 10px;
 /*	background: #fff;*/
 /*    background: #B1E87E;*/
-        background: #EEE;
+        background: #f2f2f2;
 /*	color: #8c8b8b;*/
     color: rgba(0, 0, 0, 0.75);
 	font-size: 18px;
