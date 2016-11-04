@@ -8,7 +8,8 @@
 
 .navbar-default {
     border: none;
-    background: none;
+    background-color: #FFFFFF;
+    z-index: 99999;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
@@ -23,9 +24,13 @@
 .navbar {
     margin-bottom: 0;
 }
+.affix {
+    top: 0;
+    width: 100%;
+}
 
-.navbar-nav ul {
-    float: right;
+.affix + .container-fluid {
+    padding-top: 237px;
 }
 
 @media screen and (min-width: 768px) {
@@ -141,19 +146,3 @@ hr.style1:after {
 	-moz-transform: rotate(90deg);
 	transform: rotate(90deg);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
