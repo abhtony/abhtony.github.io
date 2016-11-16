@@ -16,3 +16,7 @@ $('.animate-scroll').click(function(){
     }, 500);
     return false;
 });
+
+$('.menu-item').click(function(){
+  $(".navbar-collapse").collapse('hide');
+});
